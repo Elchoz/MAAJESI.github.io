@@ -1,0 +1,1260 @@
+/* --- Paleta de Colores de Lujo (Morado Oscuro y Oro) --- */
+:root {
+    --morado-imperial: #1a0933;   /* Morado muy oscuro de fondo principal */
+    --morado-medio: #2d1254;      /* Variación sutil para bloques y contrastes */
+    --oro-prestigio: #d4af37;     /* Color de acento de alta gama */
+    --oro-brillante: #f3e5ab;     /* Para estados hover del oro */
+    --blanco-puro: #ffffff;
+    --gris-suave: #f4f5f7;
+    --texto-oscuro: #2b2b2b;
+    --texto-atenuado: #6e6e6e;
+    --gris-platino: #f8fafc;      /* NUEVO: Fondo base profesional */
+}
+
+/* --- Configuración General --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Playfair Display', 'Segoe UI', serif;
+    color: var(--texto-oscuro);
+    background-color: var(--gris-platino); /* CAMBIO: Fondo premium unificado */
+    line-height: 1.7;
+}
+
+/* --- Menú de Navegación Premium --- */
+.menu-navegacion {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(26, 9, 51, 0.96); /* Morado imperial con opacidad */
+    z-index: 1000;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.2); /* Sutil línea dorada */
+    padding: 10px 0;
+}
+
+.menu-navegacion nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.menu-navegacion .logo {
+    color: var(--oro-prestigio);
+    font-size: 1.6rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.menu-navegacion nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.menu-navegacion nav ul li {
+    margin-left: 35px;
+}
+
+.menu-navegacion nav ul li a {
+    color: var(--blanco-puro);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    transition: color 0.3s;
+}
+
+.menu-navegacion nav ul li a:hover {
+    color: var(--oro-prestigio);
+}
+
+/* --- Portada de Ventas Corporativas --- */
+.portada {
+    background: linear-gradient(rgba(26, 9, 51, 0.75), rgba(26, 9, 51, 0.85)), 
+                url('https://picsum.photos/1920/1080?grayscale') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--blanco-puro);
+    padding: 0 20px;
+}
+
+.etiqueta-exclusiva {
+    color: var(--oro-prestigio);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.contenido-portada h1 {
+    font-size: 3.5rem;
+    line-height: 1.2;
+    margin-bottom: 25px;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+.contenido-portada p {
+    font-size: 1.3rem;
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 300;
+}
+
+.grupo-botones {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Botones Premium */
+.boton-portada-oro {
+    padding: 15px 35px;
+    background-color: var(--oro-prestigio);
+    color: var(--morado-imperial);
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.boton-portada-oro:hover {
+    background-color: var(--oro-brillante);
+    transform: translateY(-2px);
+}
+
+.boton-portada-linea {
+    padding: 15px 35px;
+    background-color: transparent;
+    color: var(--blanco-puro);
+    text-decoration: none;
+    border: 1px solid var(--blanco-puro);
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    transition: all 0.3s;
+}
+
+.boton-portada-linea:hover {
+    background-color: var(--blanco-puro);
+    color: var(--morado-imperial);
+}
+
+/* --- Sección de Ventas en Cascada (Sin línea de tiempo) --- */
+.seccion-ventas {
+    padding: 120px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: transparent; /* Hereda fondo del body */
+}
+
+.encabezado-seccion {
+    text-align: center;
+    margin-bottom: 90px;
+}
+
+.encabezado-seccion h2 {
+    font-size: 2.6rem;
+    color: var(--morado-imperial);
+    margin-bottom: 15px;
+}
+
+.linea-decorativa {
+    width: 60px;
+    height: 3px;
+    background-color: var(--oro-prestigio);
+    margin: 0 auto 20px auto;
+}
+
+.encabezado-seccion p {
+    color: var(--texto-atenuado); /* CORREGIDO TYPO */
+    font-size: 1.2rem;
+}
+
+/* Filas Asimétricas en Zigzag */
+.contenedor-ventas-cascada {
+    display: flex;
+    flex-direction: column;
+    gap: 100px; /* Separación elegante entre bloques */
+}
+
+.fila-venta {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+/* Invierte el orden visual en las filas declaradas */
+.fila-invertida {
+    flex-direction: row-reverse;
+}
+
+.columna-imagen, .columna-texto {
+    flex: 1;
+}
+
+/* Tarjeta de Imagen de Alto Valor */
+.tarjeta-imagen-premium {
+    position: relative;
+    width: 100%;
+    height: 420px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(26, 9, 51, 0.12);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.tarjeta-imagen-premium img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.6s ease;
+}
+
+/* Efectos al pasar el cursor sobre el bloque */
+.tarjeta-imagen-premium:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 30px 50px rgba(26, 9, 51, 0.2);
+}
+
+.tarjeta-imagen-premium:hover img {
+    transform: scale(1.05);
+}
+
+/* Cortina Descriptiva de Prestigio (Hover) */
+.capa-hover-detalles {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(26, 9, 51, 0.95), rgba(45, 18, 84, 0.9));
+    color: var(--blanco-puro);
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: bottom 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.tarjeta-imagen-premium:hover .capa-hover-detalles {
+    bottom: 0;
+}
+
+.capa-hover-detalles p {
+    font-size: 1.1rem;
+    border-left: 2px solid var(--oro-prestigio);
+    padding-left: 15px;
+}
+
+/* Copywriting / Texto de Ventas */
+.numero-servicio {
+    font-size: 3rem;
+    font-weight: 800;
+    color: rgba(214, 175, 55, 0.25);
+    display: block;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+.columna-texto h3 {
+    font-size: 2rem;
+    color: var(--morado-imperial);
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.columna-texto .descripcion-corta {
+    font-size: 1.1rem;
+    color: var(--texto-oscuro);
+    margin-bottom: 30px;
+}
+
+.boton-ventas-enlace {
+    color: var(--oro-prestigio);
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    font-size: 1rem;
+    transition: color 0.3s, padding-left 0.3s;
+}
+
+.boton-ventas-enlace:hover {
+    color: var(--morado-imperial);
+    padding-left: 8px;
+}
+
+/* --- Sección Final de Ventas (Conversión) --- */
+.llamado-accion-final {
+    background-color: var(--morado-imperial);
+    color: var(--blanco-puro);
+    text-align: center;
+    padding: 100px 20px;
+    border-top: 2px solid var(--oro-prestigio);
+}
+
+.llamado-accion-final h3 {
+    font-size: 2.3rem;
+    margin-bottom: 15px;
+}
+
+.llamado-accion-final p {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 35px;
+}
+
+/* --- Responsive Layout --- */
+@media screen and (max-width: 968px) {
+    .fila-venta, .fila-invertida { /* CORREGIDO TYPO .fila-invertiva */
+        flex-direction: column;
+        gap: 30px;
+    }
+    .contenido-portada h1 { font-size: 2.5rem; }
+    .tarjeta-imagen-premium { height: 320px; }
+    .grupo-botones { flex-direction: column; gap: 10px; }
+}
+
+footer {
+    background-color: #0f0520;
+    color: rgba(255, 255, 255, 0.4);
+    text-align: center;
+    padding: 30px;
+    font-size: 0.85rem;
+    border-top: 1px solid rgba(212, 175, 55, 0.1);
+}
+
+/* --- Nueva Sección: Identidad Corporativa Premium --- */
+.seccion-identidad {
+    background-color: transparent; /* CAMBIO: Deja pasar el fondo gris claro del body */
+    padding: 100px 20px;
+}
+
+.contenedor-identidad {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.encabezado-identidad {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.subtitulo-oro {
+    color: var(--oro-prestigio);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.encabezado-identidad h2 {
+    font-size: 2.4rem;
+    color: var(--morado-imperial);
+    margin-bottom: 15px;
+}
+
+/* Distribución de las 3 columnas */
+.bloques-identidad {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+/* Tarjeta Corporativa */
+.tarjeta-identidad {
+    background-color:#c68346;
+    padding: 40px 30px;
+    border-radius: 6px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(26, 9, 51, 0.04);
+    border: 1px solid rgba(26, 9, 51, 0.03);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta-identidad:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(26, 9, 51, 0.08);
+}
+
+/* Estilo para los marcadores de posición de iconos */
+.icono-corporativo {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.circulo-icono {
+    width: 60px;
+    height: 60px;
+    background-color: var(--morado-imperial);
+    color: var(--oro-prestigio);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    font-weight: bold;
+    border: 1px solid rgba(214, 175, 55, 0.3);
+}
+
+.tarjeta-identidad h3 {
+    font-size: 1.6rem;
+    color: var(--morado-imperial);
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.tarjeta-identidad p {
+    font-size: 1rem;
+    color: var(--texto-oscuro);
+    line-height: 1.6;
+}
+
+/* Ajustes Responsive para esta sección */
+@media screen and (max-width: 768px) {
+    .seccion-identidad {
+        padding: 60px 20px;
+    }
+    .encabezado-identidad h2 {
+        font-size: 2rem;
+    }
+}
+
+/* --- Estilos para la Página Adicional de Contacto y Soporte --- */
+.cabecera-contacto {
+    background-color: var(--morado-imperial);
+    color: var(--blanco-puro);
+    padding: 160px 20px 80px 20px;
+    text-align: center;
+    border-bottom: 1px solid rgba(214, 175, 55, 0.15);
+}
+
+.contenido-cabecera p {
+    max-width: 700px;
+    margin: 20px auto 0 auto;
+    font-size: 1.15rem;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 300;
+}
+
+.seccion-formulario-contacto {
+    background-color: transparent; /* CAMBIO: Mantiene fluidez con el fondo del body */
+    padding: 80px 20px;
+}
+
+.contenedor-dos-columnas {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 50px;
+    align-items: flex-start;
+}
+
+.columna-info-canales {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* Tarjetas de canales (Ventas y Soporte) */
+.tarjeta-canal {
+    background-color: var(--blanco-puro);
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(26, 9, 51, 0.03);
+    border: 1px solid rgba(26, 9, 51, 0.02);
+}
+
+.etiqueta-canal {
+    display: inline-block;
+    padding: 4px 12px;
+    background-color: rgba(214, 175, 55, 0.15);
+    color: var(--oro-prestigio);
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.canal-tecnico {
+    background-color: rgba(26, 9, 51, 0.08);
+    color: var(--morado-imperial);
+}
+
+.tarjeta-canal h3 {
+    font-size: 1.6rem;
+    color: var(--morado-imperial);
+    margin-bottom: 15px;
+}
+
+.tarjeta-canal p {
+    color: var(--texto-oscuro);
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+.datos-linea {
+    margin-bottom: 10px;
+    font-size: 1.05rem;
+}
+
+.datos-linea strong {
+    color: var(--morado-imperial);
+}
+
+.datos-linea a {
+    color: var(--oro-prestigio);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.datos-linea a:hover {
+    color: var(--morado-medio);
+}
+
+.nota-soporte {
+    font-size: 0.85rem !important;
+    color: #9b59b6 !important;
+    margin-top: 15px;
+    font-style: italic;
+}
+
+/* Estilos de la Tarjeta del Formulario */
+.columna-formulario-premium {
+    flex: 1.2;
+}
+
+.tarjeta-formulario {
+    background-color: var(--blanco-puro);
+    padding: 50px 40px;
+    border-radius: 8px;
+    box-shadow: 0 15px 40px rgba(26, 9, 51, 0.06);
+    border: 1px solid rgba(26, 9, 51, 0.02);
+}
+
+.tarjeta-formulario h3 {
+    font-size: 1.8rem;
+    color: var(--morado-imperial);
+    margin-bottom: 10px;
+}
+
+.tarjeta-formulario > p {
+    color: var(--texto-atenuado);
+    margin-bottom: 35px;
+    font-size: 0.95rem;
+}
+
+/* Diseño del Formulario */
+.formulario-prestige {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.grupo-campo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.grupo-campo-fila {
+    display: flex;
+    gap: 20px;
+}
+
+.grupo-campo-fila .grupo-campo {
+    flex: 1;
+}
+
+.formulario-prestige label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--morado-imperial);
+    letter-spacing: 0.5px;
+}
+
+.formulario-prestige input,
+.formulario-prestige select,
+.formulario-prestige textarea {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    background-color: #f8fafc;
+    font-family: inherit;
+    font-size: 1rem;
+    color: var(--texto-oscuro);
+    transition: all 0.3s ease;
+}
+
+/* Efecto de foco premium morado */
+.formulario-prestige input:focus,
+.formulario-prestige select:focus,
+.formulario-prestige textarea:focus {
+    outline: none;
+    border-color: var(--morado-medio);
+    background-color: var(--blanco-puro);
+    box-shadow: 0 0 0 3px rgba(45, 18, 84, 0.1);
+}
+
+/* Botón de envío */
+.boton-enviar-formulario {
+    padding: 16px;
+    background-color: var(--morado-imperial);
+    color: var(--oro-prestigio);
+    border: 1px solid var(--oro-prestigio);
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.boton-enviar-formulario:hover {
+    background-color: var(--oro-prestigio);
+    color: var(--morado-imperial);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(214, 175, 55, 0.3);
+}
+
+/* Adaptabilidad Móvil */
+@media screen and (max-width: 900px) {
+    .contenedor-dos-columnas {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .grupo-campo-fila {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .tarjeta-formulario {
+        padding: 35px 25px;
+    }
+}
+
+/* --- Mini Portada Portafolio/Galería (Base para PC) --- */
+.mini-portada-galeria-html {
+    position: relative;
+    width: 100%;
+    height: 380px; /* Altura ideal y espaciosa para pantallas grandes */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 70px; /* Espacio para que el menú fijo no la tape */
+}
+
+/* ==========================================================================
+   ADAPTABILIDAD MÓVIL PARA LA MINI PORTADA
+   ========================================================================== */
+
+@media screen and (max-width: 768px) {
+    .mini-portada-galeria-html {
+        height: 300px; /* Reducimos la altura en tablets y móviles para que no sature */
+        margin-top: 60px; /* Ajustamos levemente el margen del menú en móviles */
+    }
+    
+    /* Si tienes textos grandes dentro de la portada, es buena idea 
+       reducir un poco su tamaño aquí para que no se amontonen */
+    .contenido-mini-portada-html h2, 
+    .contenido-mini-portada-html h1 {
+        font-size: 2rem !important; 
+    }
+    
+    .contenido-mini-portada-html p {
+        font-size: 1rem !important;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .mini-portada-galeria-html {
+        height: 240px; /* Altura perfecta y compacta para pantallas de celulares */
+    }
+}
+
+.imagen-fondo-hero {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    
+    /* CAMBIO AQUÍ: La imagen se hace más pequeña para no cortarse */
+    object-fit: contain; 
+    
+    z-index: 1;
+    background-color: var(--morado-imperial); /* Fondo de respaldo si la foto es angosta */
+}
+
+.capa-oscura-hero {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(26, 9, 51, 0.65);
+    z-index: 2;
+}
+
+.contenido-mini-portada-html {
+    position: relative;
+    z-index: 3;
+    color: var(--blanco-puro);
+    padding: 0 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Área de contenido de la galería */
+.seccion-galeria-contenido {
+    background-color: transparent; /* Permite ver el gris platino corporativo */
+    padding: 80px 20px;
+}
+
+/* Rejilla cuadriculada moderna */
+.contenedor-galeria {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 45px;
+}
+
+/* Estructura del Item de Galería */
+.tarjeta-galeria-item {
+    background-color: var(--blanco-puro);
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(26, 9, 51, 0.03);
+    border: 1px solid rgba(26, 9, 51, 0.02);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta-galeria-item:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px rgba(26, 9, 51, 0.08);
+}
+
+/* Marco para la imagen */
+.marco-imagen-galeria {
+    width: 100%;
+    height: 240px;
+    overflow: hidden;
+    background-color: var(--morado-imperial);
+}
+
+.marco-imagen-galeria img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.tarjeta-galeria-item:hover .marco-imagen-galeria img {
+    transform: scale(1.03);
+}
+
+/* Contenedor del texto inferior */
+.info-descripcion-abajo {
+    padding: 25px 20px;
+    text-align: left;
+}
+
+.info-descripcion-abajo h4 {
+    font-size: 1.25rem;
+    color: var(--morado-imperial);
+    margin-bottom: 12px;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.info-descripcion-abajo p {
+    font-size: 0.95rem;
+    color: var(--texto-oscuro);
+    line-height: 1.6;
+}
+
+/* Adaptabilidad para Celulares y Tabletas */
+@media screen and (max-width: 768px) {
+    .contenedor-galeria {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .seccion-galeria-contenido {
+        padding: 50px 15px;
+    }
+    .marco-imagen-galeria {
+        height: 200px;
+    }
+}
+
+/* --- Página de Servicios Detallados con Sidebar ------------------------------------------------- */
+.seccion-servicios-detallados {
+    background-color: transparent; /* Permite ver el gris platino corporativo */
+    padding: 100px 20px;
+}
+
+.contenedor-principal-servicios {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 50px;
+    align-items: flex-start;
+}
+
+.columna-servicios-contenido {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.bloque-servicio-grande {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.bloque-invertido {
+    flex-direction: row-reverse;
+}
+
+.imagen-servicio-grande, .texto-servicio-grande {
+    flex: 1;
+}
+
+.imagen-servicio-grande img {
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+    border-radius: 6px;
+    box-shadow: 0 15px 35px rgba(26, 9, 51, 0.05);
+}
+
+.texto-servicio-grande h3 {
+    font-size: 1.8rem;
+    color: var(--morado-imperial);
+    margin-bottom: 12px;
+}
+
+.linea-corta-oro {
+    width: 50px;
+    height: 3px;
+    background-color: var(--oro-prestigio);
+    margin-bottom: 20px;
+}
+
+.texto-servicio-grande p {
+    font-size: 1rem;
+    color: var(--texto-oscuro);
+    line-height: 1.6;
+}
+
+/* --- Estilos de la Barra Lateral (Sidebar) --------------------- */
+.sidebar-marcas {
+    flex: 1;
+    position: sticky;
+    top: 100px;
+}
+
+.interior-sidebar {
+    background-color: var(--blanco-puro);
+    padding: 30px 25px;
+    border-radius: 8px;
+    border: 1px solid rgba(26, 9, 51, 0.04);
+    box-shadow: 0 10px 30px rgba(26, 9, 51, 0.03);
+}
+
+.subtitulo-sidebar-oro {
+    color: var(--oro-prestigio);
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.interior-sidebar h4 {
+    font-size: 1.4rem;
+    color: var(--morado-imperial);
+    margin-bottom: 10px;
+}
+
+.linea-decorativa-sidebar {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(214, 175, 55, 0.2);
+    margin-bottom: 15px;
+}
+
+.descripcion-sidebar {
+    font-size: 0.9rem;
+    color: var(--texto-oscuro);
+    line-height: 1.4;
+    margin-bottom: 25px;
+}
+
+.grid-logos-marcas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.tarjeta-logo-marca {
+    background-color: #f8fafc;
+    padding: 15px 10px;
+    border-radius: 6px;
+    text-align: center;
+    border: 1px solid #edf2f7;
+    transition: all 0.3s ease;
+}
+
+.tarjeta-logo-marca:hover {
+    border-color: var(--oro-prestigio);
+    background-color: var(--blanco-puro);
+    transform: translateY(-2px);
+}
+
+.tarjeta-logo-marca img {
+    max-width: 100%;
+    height: 45px;
+    object-fit: contain;
+    filter: grayscale(100%);
+    opacity: 0.7;
+    transition: all 0.3s ease;
+    margin-bottom: 8px;
+}
+
+.tarjeta-logo-marca:hover img {
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
+.tarjeta-logo-marca span {
+    display: block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--texto-oscuro);
+}
+
+/* --- DISEÑO RESPONSIVO INTELIGENTE -_---------------- */
+@media screen and (max-width: 1024px) {
+    .contenedor-principal-servicios {
+        flex-direction: column;
+        gap: 60px;
+    }
+    .sidebar-marcas {
+        width: 100%;
+        position: static;
+    }
+    .grid-logos-marcas {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .bloque-servicio-grande, .bloque-invertido {
+        flex-direction: column;
+        gap: 25px;
+    }
+    .imagen-servicio-grande img {
+        height: 250px;
+    }
+    .grid-logos-marcas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* ==========================================================================
+    NUEVO: BLOQUE CON TÍTULO SUPERIOR Y CUADRÍCULA DE 4 IMÁGENES (COMBINADO Y OPTIMIZADO 2X2)
+   ========================================================================== */
+.bloque-servicio-cuadricula {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin: 50px 0;
+}
+
+.texto-servicio-superior {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.texto-servicio-superior h3 {
+    font-size: 2rem;
+    color: var(--morado-imperial);
+    margin-bottom: 12px;
+}
+
+.linea-corta-oro-centro {
+    width: 60px;
+    height: 3px;
+    background-color: var(--oro-prestigio);
+    margin: 0 auto 20px auto; 
+}
+
+.texto-servicio-superior p {
+    font-size: 1.05rem;
+    color: var(--texto-oscuro);
+    line-height: 1.6;
+}
+
+/* Cuadrícula optimizada a 2 columnas (2 arriba y 2 abajo) */
+.conjunto-cuatro-imagenes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 25px; 
+}
+
+.marco-imagen-mini {
+    width: 100%;
+    height: 300px; /* Proporción natural en PC */
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(26, 9, 51, 0.05);
+}
+
+.marco-imagen-mini img {
+    width: 100%;
+    height: 70%; /* CORREGIDO: De 60% a 100% para evitar espacios vacíos */
+    object-fit: cover; 
+    transition: transform 0.3s ease;
+}
+
+.marco-imagen-mini:hover img {
+    transform: scale(1.05);
+}
+
+/* Adaptabilidad para el nuevo diseño de imágenes */
+@media screen and (max-width: 900px) {
+    .marco-imagen-mini {
+        height: 220px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .conjunto-cuatro-imagenes {
+        grid-template-columns: 1fr; /* Una sola columna vertical en móviles */
+    }
+    .texto-servicio-superior h3 {
+        font-size: 1.6rem;
+    }
+    .marco-imagen-mini {
+        height: 200px;
+    }
+}
+
+/* ==========================================================================
+    BLOQUE FINAL DE CONTACTO Y ATENCIÓN ÉLITE (MORADO FUERTE)
+   ========================================================================== */
+.contacto-pie-servicios {
+    background-color: #240c47;
+    color: var(--blanco-puro);
+    padding: 80px 20px;
+    border-top: 3px solid var(--oro-prestigio);
+    width: 100%;
+}
+
+.contenedor-atencion-cliente {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.bloque-atencion-info h4 {
+    font-size: 2.2rem;
+    color: var(--oro-prestigio);
+    margin-bottom: 15px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.bloque-atencion-info > p {
+    font-size: 1.1rem;
+    margin-bottom: 50px;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.grid-datos-atencion {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 40px;
+    text-align: left;
+}
+
+.item-atencion {
+    background-color: rgba(255, 255, 255, 0.03);
+    padding: 20px;
+    border-radius: 6px;
+    border-left: 2px solid rgba(214, 175, 55, 0.3);
+    transition: all 0.3s ease;
+}
+
+.item-atencion:hover {
+    background-color: rgba(255, 255, 255, 0.06);
+    border-left-color: var(--oro-prestigio);
+    transform: translateY(-2px);
+}
+
+.item-atencion strong {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--oro-prestigio);
+    display: block;
+    margin-bottom: 10px;
+}
+
+.item-atencion p {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin: 0;
+    color: var(--blanco-puro);
+}
+
+.item-atencion a {
+    color: var(--blanco-puro);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.item-atencion a:hover {
+    color: var(--oro-prestigio);
+}
+
+@media screen and (max-width: 900px) {
+    .bloque-atencion-info h4 {
+        font-size: 1.8rem;
+    }
+    .grid-datos-atencion {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .grid-datos-atencion {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .item-atencion {
+        border-left: none;
+        border-bottom: 2px solid rgba(214, 175, 55, 0.2);
+    }
+}
+
+/* ==========================================================================
+   PORTAFOLIO DE PANTALLA COMPLETA (3 CONTENEDORES)
+   ========================================================================== */
+
+/* 1. Habilitar scroll suave tipo diapositiva */
+.seccion-portafolio-pantalla {
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory; /* Hace que el scroll se 'enganche' en cada bloque */
+}
+
+/* 2. Estructura base para cada uno de los 3 contenedores */
+.bloque-pantalla-completa {
+    width: 100%;
+    height: 100vh; /* Ocupa exactamente el 100% del alto de la pantalla */
+    scroll-snap-align: start; /* Punto de anclaje para el scroll */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+/* 3. Tarjeta central de contenido */
+.contenido-bloque {
+    max-width: 800px;
+    background-color: rgba(26, 9, 51, 0.85); /* Fondo morado imperial con transparencia */
+    padding: 50px 40px;
+    border-radius: 8px;
+    border: 1px solid rgba(212, 175, 55, 0.3); /* Línea dorada */
+    backdrop-filter: blur(5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.contenido-bloque h2 {
+    font-size: 2.8rem;
+    color: var(--blanco-puro);
+    margin-bottom: 15px;
+}
+
+.contenido-bloque p {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.85);
+    margin-bottom: 30px;
+}
+
+/* 4. Fondos independientes para cada contenedor */
+/* Puedes cambiar las URLs por tus imágenes o imágenes locales */
+.fondo-bloque-1 {
+    background: linear-gradient(rgba(26, 9, 51, 0.5), rgba(26, 9, 51, 0.5)),
+                url('https://picsum.photos/1920/1080?random=1') no-repeat center center/cover;
+}
+
+.fondo-bloque-2 {
+    background: linear-gradient(rgba(26, 9, 51, 0.5), rgba(26, 9, 51, 0.5)),
+                url('https://picsum.photos/1920/1080?random=2') no-repeat center center/cover;
+}
+
+.fondo-bloque-3 {
+    background: linear-gradient(rgba(26, 9, 51, 0.5), rgba(26, 9, 51, 0.5)),
+                url('https://picsum.photos/1920/1080?random=3') no-repeat center center/cover;
+}
+
+/* ==========================================================================
+   ADAPTABILIDAD MÓVIL
+   ========================================================================== */
+@media screen and (max-width: 768px) {
+    .contenido-bloque {
+        padding: 30px 20px;
+    }
+    
+    .contenido-bloque h2 {
+        font-size: 2rem;
+    }
+    
+    .contenido-bloque p {
+        font-size: 1rem;
+    }
+}
